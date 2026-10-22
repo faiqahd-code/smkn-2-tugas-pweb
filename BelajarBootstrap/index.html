@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMK Negeri 2 Padang</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+        }
+
+        .topbar {
+            background: #092d63;
+            color: white;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        .navbar {
+            background: white;
+        }
+
+        .navbar-brand {
+            color: #103b78;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #18365f;
+            font-weight: 600;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #092d63, #1768b5);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .section-title {
+            color: #103b78;
+            font-weight: bold;
+        }
+
+        .school-card {
+            border: none;
+            border-radius: 12px;
+            height: 100%;
+            transition: 0.2s;
+        }
+
+        .school-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .icon-box {
+            background: #e5efff;
+            color: #1455a0;
+            font-size: 28px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        .news-date {
+            color: #1768b5;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #092d63;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- INFORMASI ATAS -->
+    <div class="topbar">
+        <div class="container d-flex justify-content-between flex-wrap gap-2">
+            <span>SMK NEGERI 2 PADANG</span>
+            <span>Padang, Sumatera Barat | (0751) 21930</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="#beranda">
+                SMKN 2 PADANG
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jurusan">Jurusan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+
+                <a href="https://spmb.sumbarprov.go.id/"
+                   class="btn btn-primary ms-lg-3">
+                    Informasi SPMB
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-7">
+                    <p class="text-info fw-bold">
+                        SELAMAT DATANG DI WEBSITE SEKOLAH
+                    </p>
+
+                    <h1>SMK NEGERI 2 PADANG</h1>
+
+                    <p class="fs-5 mt-3">
+                        Mewujudkan generasi yang terampil,
+                        berkarakter, dan siap menghadapi dunia kerja.
+                    </p>
+
+                    <a href="#profil"
+                       class="btn btn-light text-primary fw-bold mt-3">
+                        Mengenal Sekolah
+                    </a>
+
+                    <a href="#jurusan"
+                       class="btn btn-outline-light mt-3 ms-2">
+                        Lihat Jurusan
+                    </a>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="bg-white text-dark rounded-4 p-4 shadow">
+                        <div class="text-center">
+                            <div style="font-size:65px">🏫</div>
+                            <h4 class="fw-bold">SMK Negeri 2 Padang</h4>
+                            <p class="text-secondary">
+                                Sekolah Menengah Kejuruan Negeri
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <p>📍 Jl. Dr. Sutomo No. 5, Simpang Haru</p>
+                        <p>🎓 Pendidikan Kejuruan</p>
+                        <p class="mb-0">📚 6 Program Keahlian</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <p class="text-primary fw-bold">TENTANG SEKOLAH</p>
+                <h2 class="section-title">Profil SMKN 2 Padang</h2>
+                <p class="text-secondary">
+                    Mengenal sekolah dan pendidikan kejuruan kami.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <div class="card school-card shadow-sm p-4">
+                        <h4 class="section-title">Sambutan</h4>
+
+                        <p>
+                            Selamat datang di website SMK Negeri 2 Padang.
+                            Website ini menjadi sarana informasi mengenai
+                            profil sekolah, program keahlian, berita,
+                            dan kegiatan pendidikan.
+                        </p>
+
+                        <p>
+                            SMK Negeri 2 Padang merupakan sekolah kejuruan
+                            yang berlokasi di Kota Padang, Sumatera Barat.
+                            Sekolah memiliki program keahlian di bidang
+                            teknologi, bisnis, manajemen, dan pariwisata.
+                        </p>
+
+                        <a href="https://smkn2padang.sch.id/"
+                           class="btn btn-primary align-self-start">
+                            Kunjungi Website Resmi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card school-card shadow-sm p-4">
+                        <h4 class="section-title">Identitas Sekolah</h4>
+
+                        <p><b>Nama:</b> SMK Negeri 2 Padang</p>
+                        <p><b>NPSN:</b> 10304848</p>
+                        <p><b>Status:</b> Negeri</p>
+                        <p><b>Kota:</b> Padang</p>
+                        <p class="mb-0">
+                            <b>Provinsi:</b> Sumatera Barat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JURUSAN -->
+    <section id="jurusan" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-primary fw-bold">PROGRAM KEAHLIAN</p>
+                <h2 class="section-title">Jurusan Kami</h2>
+                <p class="text-secondary">
+                    Pilih bidang keahlian untuk mengembangkan keterampilan.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">💻</div>
+                        <h5>Pengembangan Perangkat Lunak dan Gim</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari pemrograman, aplikasi, dan
+                            pengembangan perangkat lunak.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">🌐</div>
+                        <h5>Teknik Jaringan Komputer dan Telekomunikasi</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari jaringan komputer dan teknologi
+                            komunikasi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">🧳</div>
+                        <h5>Usaha Layanan Wisata</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari layanan wisata dan
+                            pengelolaan perjalanan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">📋</div>
+                        <h5>Manajemen Perkantoran dan Layanan Bisnis</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari administrasi dan pelayanan
+                            perkantoran.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">🧮</div>
+                        <h5>Akuntansi dan Keuangan Lembaga</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari pencatatan keuangan dan
+                            penyusunan laporan akuntansi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">🛒</div>
+                        <h5>Bisnis Digital dan Retail</h5>
+                        <p class="text-secondary mb-0">
+                            Mempelajari pemasaran, bisnis digital,
+                            dan kegiatan perdagangan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BERITA -->
+    <section id="berita" class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between
+                        align-items-center flex-wrap mb-4 gap-2">
+                <div>
+                    <p class="text-primary fw-bold mb-1">
+                        INFORMASI SEKOLAH
+                    </p>
+                    <h2 class="section-title">Berita Terbaru</h2>
+                </div>
+
+                <a href="https://smkn2padang.sch.id/daftar_berita"
+                   class="btn btn-outline-primary">
+                    Semua Berita
+                </a>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <span class="news-date">26 Juni 2026</span>
+                        <h5 class="mt-3">Statistik Pendaftar SPMB</h5>
+                        <p class="text-secondary">
+                            Informasi statistik pendaftar penerimaan
+                            murid baru SMKN 2 Padang.
+                        </p>
+                        <a href="https://smkn2padang.sch.id/daftar_berita"
+                           class="text-primary text-decoration-none">
+                            Baca berita →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <span class="news-date">18 Juni 2026</span>
+                        <h5 class="mt-3">Informasi SPMB Tahun 2026</h5>
+                        <p class="text-secondary">
+                            Informasi penerimaan murid baru
+                            tahun ajaran 2026/2027.
+                        </p>
+                        <a href="https://smkn2padang.sch.id/daftar_berita"
+                           class="text-primary text-decoration-none">
+                            Baca berita →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <span class="news-date">18 Juni 2026</span>
+                        <h5 class="mt-3">Solusi Kendala Akun SPMB</h5>
+                        <p class="text-secondary">
+                            Informasi bantuan untuk mengatasi
+                            permasalahan pembuatan akun SPMB.
+                        </p>
+                        <a href="https://smkn2padang.sch.id/daftar_berita"
+                           class="text-primary text-decoration-none">
+                            Baca berita →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="text-secondary">
+                    Informasi kontak SMK Negeri 2 Padang.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">📍</div>
+                        <h5>Alamat</h5>
+                        <p class="text-secondary">
+                            Jl. Dr. Sutomo No. 5, Simpang Haru,
+                            Padang Timur, Kota Padang.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">☎️</div>
+                        <h5>Telepon</h5>
+                        <p class="text-secondary">(0751) 21930</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card school-card shadow-sm p-4">
+                        <div class="icon-box mb-3">✉️</div>
+                        <h5>Email</h5>
+                        <p class="text-secondary">
+                            smkn2_padang@yahoo.co.id
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="https://smkn2padang.sch.id/"
+                   class="btn btn-primary">
+                    Buka Website Resmi SMKN 2 Padang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <h5>SMK NEGERI 2 PADANG</h5>
+            <p class="mb-1">
+                Sekolah Menengah Kejuruan Negeri di Kota Padang
+            </p>
+            <small>
+                © 2026 SMKN 2 Padang | Website Pembelajaran Bootstrap
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
